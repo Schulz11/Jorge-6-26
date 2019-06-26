@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Part_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTL-iP-9dN">
+                                <rect key="frame" x="165" y="675" width="45" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Check">
+                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFo-fK-1O3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxf-FE-qp5">
+                                <rect key="frame" x="137.66666666666666" y="734" width="100" height="31.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cat Calculator II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drm-yF-TfX">
+                                <rect key="frame" x="63" y="68" width="265" height="69"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V78-tr-5lu">
+                                <rect key="frame" x="153" y="161" width="84" height="490"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="top" secondItem="UTL-iP-9dN" secondAttribute="bottom" constant="106" id="0EC-aW-ZvQ"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="30f-PB-qHA"/>
+                            <constraint firstItem="Drm-yF-TfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4y3-Rf-pWL"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5YM-hq-asv"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="top" secondItem="Drm-yF-TfX" secondAttribute="bottom" constant="24" id="6ON-1W-7dC"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="top" secondItem="Drm-yF-TfX" secondAttribute="bottom" constant="24" id="88i-wN-ayV"/>
+                            <constraint firstItem="Drm-yF-TfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BB8-0y-jtw"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="top" secondItem="Drm-yF-TfX" secondAttribute="bottom" constant="64" id="Blw-xg-cvT"/>
+                            <constraint firstItem="Drm-yF-TfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bzz-Yf-gy4"/>
+                            <constraint firstItem="Drm-yF-TfX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="D0j-WF-A3q"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="top" secondItem="UTL-iP-9dN" secondAttribute="bottom" constant="106" id="F6w-eu-21v"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYj-kV-alg"/>
+                            <constraint firstItem="UTL-iP-9dN" firstAttribute="top" secondItem="V78-tr-5lu" secondAttribute="bottom" constant="24" id="KWt-c8-mIu"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="top" secondItem="Drm-yF-TfX" secondAttribute="bottom" constant="24" id="Kct-hy-Aq5"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="top" secondItem="UTL-iP-9dN" secondAttribute="bottom" constant="24" id="NOi-XN-r96"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="leading" secondItem="Drm-yF-TfX" secondAttribute="trailing" constant="-100" id="ORt-8S-Ybl"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ObA-pg-rrF"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QMf-y4-2kM"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Usq-at-HbR"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VI1-Cc-19M"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFL-hO-ah7"/>
+                            <constraint firstItem="UTL-iP-9dN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcF-yb-fCR"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cmg-Df-zWf"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cua-eO-bzG"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dBz-8g-1Sn"/>
+                            <constraint firstItem="UTL-iP-9dN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eCt-hr-g12"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="top" secondItem="UTL-iP-9dN" secondAttribute="bottom" constant="24" id="mzb-dS-gde"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n8q-kv-34h"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pGj-gP-eEA"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qpU-5B-qac"/>
+                            <constraint firstItem="xxf-FE-qp5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rU4-Dd-tHr"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="svy-VI-xLT"/>
+                            <constraint firstItem="V78-tr-5lu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRp-kg-cCv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="check" destination="UTL-iP-9dN" id="gpn-2P-YW2"/>
+                        <outlet property="enteredNumber" destination="V78-tr-5lu" id="CW0-hy-e2d"/>
+                        <outlet property="result" destination="xxf-FE-qp5" id="K6a-yD-2vP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="25.862068965517242"/>
+        </scene>
+    </scenes>
+</document>
